@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactanos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1998/1998767.png" type="imagenicon">
+
+
+</head>
+<body>
+    <main>
+        <!-- SECCION DE NAVBAR -->
+        <header class="sticky-top">
+        </header>
+
+        <!-- Imegen -->
+        <section>
+            <div class="wrap">
+                <h1>¡Send me your opinion!</h1>
+            </div>
+        </section>
+    
+        <!-- FORMA DE CONTACTO -->
+        <section class="w-100 m-auto forma">
+            <div class="col-md-6 container-fluid text-center">
+                <h2 class="color-text">Contact me</h2>
+                <p>I would love to hear what you think about this and about all the games haha I hope you liked them, I really had fun with this idea and let me know how we can improve your experience for next year. </p>
+            </div>
+            <div class="forma  w-100 m-auto" style="max-width: 900px;">
+                <form class="row g-3" id="form">
+                    <div id="alert-container" class="container"></div>
+                    <div class="alert alert-danger fade show" style="display:none;" role="alert"
+                            id="alertValidaciones">
+                            <p id="alertValidacionesTexto"></p>
+                        </div>
+                    <div class="col-md-6">
+                        <label for="from_name" class="form-label">Name</label>
+                        <input name="from_name" type="text" class="form-control" id="from_name" placeholder="Nico">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="user_email" class="form-label">Email</label>
+                        <input name="user_email"  type="email" class="form-control" id="user_email"
+                            placeholder="niconiconi@gmail.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="user_cel" class="form-label">Number</label>
+                        <input name="user_cel" type="text"  minlength="10" maxlength="10" class="form-control" id="user_cel" placeholder="5519122844">
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <input name="message" type="text" class="form-control" id="message" placeholder="Hallo Pau!">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" id="btn" class="btn btn-vitalia btn-success">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCION FOOTER -->
+        <footer>
+        </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+         emailjs.init("X-ZHrPNYCZbSVME3R");
+        emailjs.send("service_netj0yb","template_wna8tme");
+    </script>
+
+    <script src="validacionFormulario.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="footer.js" defer></script>
+</body>
+
+</html>
