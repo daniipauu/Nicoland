@@ -31,7 +31,7 @@ let footerHTML = `<div class="contenedor-footer">
 
                         </div>
                         <div class="col-12 col-lg-5 text-center  text-lg-end mt-4 mt-md-0">
-                            <p>Send me gatitos and perritos reels 😘🤭😜🧡</p>
+                            <p>Me before you 1:45:25 & Your name 1:21:30 😘🤭😜🧡</p>
                         </div>
                     </div>
                 </div>
