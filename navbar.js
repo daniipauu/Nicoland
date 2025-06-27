@@ -34,6 +34,9 @@ let navbar = `<nav class="navbar navbar-expand-lg navbar-dark" style="background
                 <li class="nav-item">
                     <a class="nav-link " style="color: white;" href="memories.html">Memories</a>
                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link " style="color: white;" href="album.html">Album</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link " style="color: white;" href="opinion.html">Opinion</a>
                 </li>
